@@ -9,6 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+
+import static com.example.a0koraj06.android5ui.R.id.fab1;
+import static com.example.a0koraj06.android5ui.R.styleable.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +24,20 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
+
+
+        View view = (View)findViewById(R.id.fab1);
+        setSupportActionBar(view);
+
+        fab1.setOnClickListener (new View.OnClickListener() {
+
+
+            public void onClick(View view) {
+                new AlertDialog.Builder(MainActivity.this).setPositiveButton("OK", null).
+                        setMessage("The FloatingActionButton was clicked!").show();
+            }
+        });
+
 
     }
 
@@ -46,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     class SearchHandler implements SearchView.OnQueryTextListener {
 
 
@@ -65,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     }
+
+
+
 
 
 }
