@@ -1,5 +1,6 @@
 package com.example.a0koraj06.android5ui;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -11,8 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import static com.example.a0koraj06.android5ui.R.id.fab1;
-import static com.example.a0koraj06.android5ui.R.styleable.View;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,15 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar1);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar);
 
-
-        View view = (View)findViewById(R.id.fab1);
-        setSupportActionBar(view);
-
-        fab1.setOnClickListener (new View.OnClickListener() {
-
+        FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.fab1);
+        fab1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
                 new AlertDialog.Builder(MainActivity.this).setPositiveButton("OK", null).
@@ -52,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.save){
+        if (item.getItemId() == R.id.save) {
 
             new AlertDialog.Builder(this).setPositiveButton("OK", null).
                     setMessage("Saving...").show();
@@ -62,13 +58,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
     class SearchHandler implements SearchView.OnQueryTextListener {
 
 
-        public SearchHandler(){
+        public SearchHandler() {
 
         }
 
@@ -86,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+}
 
 
 }
