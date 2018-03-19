@@ -62,6 +62,15 @@
         android:layout_marginTop="75dp"
         android:text="My Scorecards"
         tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/infobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Boxing Information"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>
     <android.support.design.widget.NavigationView

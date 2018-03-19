@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a0koraj06.android5ui.BoxingInfo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="285dp"
+        android:layout_height="89dp"
+        android:text="Boxing is a sport that involves two athletes fighting each other, trying to punch their opponent with padded gloves on their fists. Fights usually last three to twelve rounds, with each round usually lasting three minutes."
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="285dp"
+        android:layout_height="103dp"
+        android:text="A weight class is a measurement weight range for boxers. The lower limit of a weight class is equal to the upper weight limit of the class below it. The top class, with no upper limit, is called heavyweight in professional boxing"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="127dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <Button
+        android:id="@+id/wdiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight Dvisions"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="503dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignBaseline="@+id/cchamp"
+        android:layout_alignBottom="@+id/cchamp"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/cchamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Champions"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="503dp"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="298dp"
+        android:layout_height="31dp"
+        android:text="Fights can be won by a range of factors such as "
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="252dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="258dp"
+        android:layout_height="59dp"
+        android:text="Decision: If a fight goes this distance, the result is determined by the scorecards."
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="304dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="273dp"
+        android:layout_height="74dp"
+        android:text="If a fight is won within the distnce, it can be won by either TKO(Technical Knockout). KO(Knock Out) or DQ(Disqualification)"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="396dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+
+</RelativeLayout>
