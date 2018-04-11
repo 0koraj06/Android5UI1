@@ -5,16 +5,5 @@
     <string name="search">search</string>
 
 
-    <string-array name="rounds">
-        <item>3 Rounds</item>
-        <item>4 Rounds</item>
-        <item>5 Rounds</item>
-        <item>6 Rounds</item>
-        <item>8 Rounds</item>
-        <item>10 Rounds</item>
-        <item>12 Rounds</item>
-        <item>15 Rounds</item>
 
-
-    </string-array>
 </resources>

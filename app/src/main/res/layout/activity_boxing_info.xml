@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/totalf2"
         android:layout_width="285dp"
         android:layout_height="103dp"
         android:text="A weight class is a measurement weight range for boxers. The lower limit of a weight class is equal to the upper weight limit of the class below it. The top class, with no upper limit, is called heavyweight in professional boxing"
@@ -70,9 +70,9 @@
         android:text="Fights can be won by a range of factors such as "
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="252dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/totalf2"
+        android:layout_alignRight="@+id/totalf2"
+        android:layout_alignEnd="@+id/totalf2"
         android:layout_marginTop="40dp" />
 
     <TextView
@@ -86,8 +86,8 @@
         tools:layout_editor_absoluteY="304dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/textView5"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_alignLeft="@+id/totalf2"
+        android:layout_alignStart="@+id/totalf2" />
 
     <TextView
         android:id="@+id/textView8"
