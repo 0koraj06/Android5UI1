@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
 
 
     <EditText
@@ -271,6 +273,36 @@
         android:layout_below="@+id/fighter1"
         android:layout_toRightOf="@+id/totalf1"
         android:layout_toEndOf="@+id/totalf1" />
+    <EditText
+        android:id="@+id/f2r2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/f1r2"
+        android:layout_alignBottom="@+id/f1r2"
+        android:layout_alignLeft="@+id/f2r1"
+        android:layout_alignStart="@+id/f2r1" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignBaseline="@+id/editText22"
+        android:layout_alignBottom="@+id/editText22"
+        android:layout_alignLeft="@+id/editText12"
+        android:layout_alignStart="@+id/editText12" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250px"
+        android:layout_height="80px"
+        android:layout_alignBottom="@+id/f2r1"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
 
     <EditText
         android:id="@+id/f2r1"
@@ -288,15 +320,7 @@
 
 
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add"
-        android:layout_marginBottom="19dp"
-        android:onClick="addscore"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+
 
     <EditText
         android:id="@+id/fighter1"
@@ -344,36 +368,16 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:id="@+id/f2r2"
-        android:layout_width="70px"
-        android:layout_height="70px"
-        android:ems="10"
-        android:inputType="number"
-        android:layout_alignBaseline="@+id/f1r2"
-        android:layout_alignBottom="@+id/f1r2"
-        android:layout_alignLeft="@+id/f2r1"
-        android:layout_alignStart="@+id/f2r1" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="70px"
-        android:layout_height="70px"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:layout_alignBaseline="@+id/editText22"
-        android:layout_alignBottom="@+id/editText22"
-        android:layout_alignLeft="@+id/editText12"
-        android:layout_alignStart="@+id/editText12" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="250px"
-        android:layout_height="80px"
-        android:layout_alignBottom="@+id/f2r1"
-        android:layout_centerHorizontal="true"
-        android:text="TextView" />
-
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginBottom="19dp"
+        android:onClick="addscore"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
 
+    </ScrollView>
